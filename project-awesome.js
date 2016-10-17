@@ -32427,8 +32427,8 @@ module.exports.isValidQuestionType = isValidQuestionType;
 
 
 },{"paq-fr-change-of-base":118,"paq-mc-change-of-base":119}],138:[function(require,module,exports){
-var $=require("jquery");
-var pa=require("./index.js");
+exports.$=require("jquery");
+exports.pa=require("./index.js");
 
 exports.printMsg = function() {
     console.log("This is a message from the demo package");
@@ -32436,7 +32436,7 @@ exports.printMsg = function() {
 
 $( document ).ready(function() {
     console.log("ready function called");
-    console.log("pa=" + JSON.stringify(pa));
+    console.log("pa.generate..." + exports.pa.generate("foo","bar","fum"));
 });
 
 
